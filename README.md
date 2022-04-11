@@ -13,8 +13,12 @@ FOR AUTH:
 
 POST https://user-service-mitrasoft.herokuapp.com/api/v1/oauth/token Credentials required(login, password)
 
-given oauth token, we can add "Authorization" header for accessing resouce annotated @PreAuthorized
+given oauth token, we can add "Authorization" header for accessing resouce annotated @PreAuthorized(bearer + access_token)
 
 migration in a "recource/db.migration" folder
 
 for local deploying we need to download tomcat, build a jar-file and to use tomcat(servlet container) to deploy the app
+
+tests available
+
+Спасибо за проверку!
